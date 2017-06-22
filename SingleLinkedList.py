@@ -1,17 +1,15 @@
 class Node:
 
    def __init__(self, value, next_element):
-       self.Value = value
-       self.next_Element = next_element
+       self.__value = value
+       self.__next_element = next_element
 
    def __str__(self):
-       return str(self.Value)
+       return str(self.__value)
 
    def next_element(self):
-       return self.next_Element
+       return self.__next_element
 
    def value(self):
-       return self.Value
+       return self.__value
 
-x = Node(1, Node(2, Node(3, None)))
-x.value()
