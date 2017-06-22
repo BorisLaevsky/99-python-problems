@@ -1,10 +1,10 @@
 import SingleLinkedList
 
-def find_k_element(list, k):
-    if k == 0:
-        return list
+def find_k_element(input_list, k):
+    if k == 1:
+        return input_list
     else:
-        return find_k_element(list.next_element(), k-1)
+        return find_k_element(input_list.next_element(), k-1)
 
 x = SingleLinkedList.Node(1, SingleLinkedList.Node(2, SingleLinkedList.Node(3, None)))
-print find_k_element(x, 2)
+print find_k_element(x, 3)
