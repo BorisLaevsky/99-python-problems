@@ -1,7 +1,9 @@
 import SingleLinkedList
 
 def my_but_last(input_list):
-    if input_list.next_element().next_element():
+    if not input_list.next_element():
+        return input_list
+    elif input_list.next_element().next_element():
         return my_but_last(input_list.next_element())
     else:
         return input_list
