@@ -13,3 +13,6 @@ class Node:
    def value(self):
        return self.__value
 
+   def set_next(self, next_element):
+       self.__next_element = next_element
+
