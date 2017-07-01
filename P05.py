@@ -14,6 +14,4 @@ def reverse_list(input_list):
             current = next_element
         return previous
 
-x = SingleLinkedList.Node(1, SingleLinkedList.Node(2, SingleLinkedList.Node(3, None)))
-revx = reverse_list(x)
-print revx
+
