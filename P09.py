@@ -20,4 +20,4 @@ def pack(input_list):
     return output
 
 x = Node(1,Node(1,Node(3,Node(5,Node(5, None)))))
-print pack(x).next_element().next_element().value().next_element().next_element()
+
