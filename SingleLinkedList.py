@@ -19,6 +19,3 @@ class Node:
    def set_value(self, value_to_set):
        self.__value = value_to_set
 
-   def remove_first(self):
-	self.__value = self.__next_element.__value
-	self.set_next = self.__next_element.__next_element 
